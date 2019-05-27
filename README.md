@@ -33,13 +33,15 @@ MESSAGE: DURATION in milliseconds: 31607
 
 ```
 # If You prefer Docker
+Run it to build image from Generator_signature directory:
 
 ```bash
 $ ./docker-build 
 ```
+Run the following command (where after key -v You have to set the full path to file being processed)
 
 ```bash
-$ docker run -it -v docker run -it -v /home/$(whoami)/data:/data test/generate-signature:latest 
+$ docker run -it -v /home/$(whoami)/data:/data test/generate-signature:latest 
 FULL path for inner file:
 /data/111.zip
 ENTER the FULL path to the output file: 
