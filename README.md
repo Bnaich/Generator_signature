@@ -32,5 +32,47 @@ MESSAGE: DURATION in milliseconds: 31607
 
 
 ```
-# TODO
-Add docker support
+# If You prefer Docker
+
+```bash
+$ ./docker-build 
+```
+
+```bash
+$ docker run -it -v docker run -it -v /home/$(whoami)/data:/data test/generate-signature:latest 
+FULL path for inner file:
+/data/111.zip
+ENTER the FULL path to the output file: 
+/data/555444.txt
+Please Enter size of block in Kb: (min = 1Kb; max = 262144Kb; default = 1024Kb)
+200000
+Choose log level: (DEBUG = 1; INFO = 2; NO_LOG = 3 (default - minimum messages)
+1
+Loglevel set as DEBUG
+MESSAGE: START PROCESSING
+	File: /programm/Signature.cpp
+	line: 137
+MESSAGE: START READING
+	File: /programm/Signature.cpp
+	line: 51
+MESSAGE: START CALCULATING
+	File: /programm/Signature.cpp
+	line: 144
+MESSAGE: START WRITING
+	File: /programm/Signature.cpp
+	line: 111
+MESSAGE: READ BLOCK 1/25
+	File: /programm/Signature.cpp
+	line: 68
+MESSAGE: READ BLOCK 2/25
+	File: /programm/Signature.cpp
+	line: 68
+.......
+MESSAGE: STOP PROCESSING
+	File: /programm/Signature.cpp
+	line: 159
+MESSAGE: DURATION in milliseconds: 37782
+	File: /programm/main.cpp
+	line: 18
+
+```
